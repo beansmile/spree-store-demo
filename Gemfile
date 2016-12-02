@@ -35,6 +35,17 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'spree', '~> 3.1.3'#, github: 'spree/spree', branch: '3-1-stable'
 gem 'spree_auth_devise', '~> 3.1.0'# github: 'spree/spree_auth_devise', branch: '3-1-stable'
 gem 'spree_gateway', '~> 3.1.0'# github: 'spree/spree_gateway', branch: '3-1-stable'
+gem 'pry'
+
+group :development, :test do
+  # rspec-rails is a testing framework
+  # https://github.com/rspec/rspec-rails
+  gem 'rspec-rails', '~> 3.5'
+
+  # Provides Rails integration for factory_girl
+  # https://github.com/thoughtbot/factory_girl_rails
+  gem 'factory_girl_rails', '~> 4.7'
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
