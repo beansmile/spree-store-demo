@@ -16,3 +16,6 @@ Spree.config do |config|
 end
 
 Spree.user_class = "Spree::LegacyUser"
+
+config = Rails.application.config
+config.spree.calculators.promotion_actions_create_adjustments << Spree::Calculator::BundleFlatRate
